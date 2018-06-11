@@ -435,7 +435,7 @@ open class KeychainWrapper {
         // Uniquely identify the account who will be accessing the keychain
         let encodedIdentifier: Data? = key.data(using: String.Encoding.utf8)
         
-        keychainQueryDictionary[SecAttrGeneric] = encodedIdentifier
+        // keychainQueryDictionary[SecAttrGeneric] = encodedIdentifier
         
         keychainQueryDictionary[SecAttrAccount] = encodedIdentifier
         
